@@ -1,0 +1,9 @@
+.ProductPage {
+  display: grid;
+  grid-template-columns: 1fr .54fr;
+}
+
+.ProductPage .product-section {
+  background: #fff;
+  padding: 1.5rem;
+}

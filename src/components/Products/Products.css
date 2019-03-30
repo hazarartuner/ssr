@@ -1,0 +1,7 @@
+.Products {
+  background: #fff;
+  padding: 1.5rem;
+  display: grid;
+  grid-row-gap: 1.5rem;
+  box-sizing: border-box;
+}

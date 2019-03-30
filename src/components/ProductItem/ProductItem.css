@@ -1,0 +1,63 @@
+.ProductItem {
+  display: grid;
+  grid-template-columns: 10rem 1fr auto;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 0.5rem 1.5rem;
+  grid-template-areas: 'image name price' 'image description description' 'image . button';
+}
+
+.ProductItem + .ProductItem {
+  border-top: solid .1rem #ddd;
+  padding-top: 1.5rem;
+}
+
+.ProductItem .image-link {
+  grid-area: image;
+  width: 100%;
+  display: block;
+  align-self: start;
+  border-radius: .3rem;
+  box-shadow: .1rem .1rem .3rem 0 rgba(0,0,0,0.37);
+}
+
+.ProductItem .image-link img {
+  width: 100%;
+}
+
+.ProductItem .name {
+  grid-area: name;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.ProductItem .name a {
+  color: #000;
+}
+
+.ProductItem .price {
+  grid-area: price;
+  justify-self: end;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.ProductItem .description {
+  grid-area: description;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: justify;
+  font-style: italic;
+}
+
+.ProductItem button {
+  grid-area: button;
+  justify-self: end;
+  background: #444;
+  color: #fff;
+  margin-top: 1rem;
+  border: solid .1rem #222;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: .8rem 1.5rem;
+}
