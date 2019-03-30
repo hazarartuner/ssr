@@ -20,6 +20,10 @@ class ProductsContainer extends Component {
     children: PropTypes.func.isRequired
   };
 
+  static initialActions() {
+    return [loadAllProducts(), loadAllCategories()];
+  }
+
   componentDidMount() {
     const { loadAllCategories, loadAllProducts } = this.props;
 

@@ -12,6 +12,10 @@ class ProductContainer extends Component {
     children: PropTypes.func.isRequired
   };
 
+  static initialActions(match) {
+    return [loadProduct(match.params.id)];
+  }
+
   componentDidMount() {
     const { loadProduct, match } = this.props;
 

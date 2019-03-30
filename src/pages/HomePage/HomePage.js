@@ -13,6 +13,10 @@ import CartContainer from "containers/CartContainer";
 import "./HomePage.css";
 
 class HomePage extends Component {
+  static initialActions() {
+    return [...ProductsContainer.initialActions()];
+  }
+
   render() {
     return (
       <div className="HomePage">

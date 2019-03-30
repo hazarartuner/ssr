@@ -10,6 +10,10 @@ import CartContainer from "containers/CartContainer";
 import "./ProductPage.css";
 
 class ProductPage extends Component {
+  static initialActions(match) {
+    return [...ProductContainer.initialActions(match)];
+  }
+
   render() {
     return (
       <div className="ProductPage">
